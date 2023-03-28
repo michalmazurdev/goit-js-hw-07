@@ -2,6 +2,7 @@ import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 const galleryEl = document.querySelector(".gallery");
 let markup = ``;
+
 for (const image of galleryItems) {
   markup += `<div class='gallery__item'> <a href=${image.original} class='gallery__link'> <img  class='gallery__image'src=${image.preview} alt=${image.description} data-source=${image.original}> </a>
   </div>`;
